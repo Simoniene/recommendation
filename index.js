@@ -4,6 +4,9 @@ import express from "express";
 import cors from "cors";
 import taskRouter from "./src/controller/recommendation.js";
 const app = express();
+
+const router = express.Router();
+
 app.use(cors());
 
 app.use(express.json());
